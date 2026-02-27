@@ -1,7 +1,67 @@
-body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;background:#f7f8fc;margin:0;color:#1f2430}
-header{background:#2f67ff;color:#fff;padding:12px 16px}
-main{padding:12px;display:grid;gap:10px}
-section{background:#fff;border-radius:10px;padding:12px;box-shadow:0 2px 8px rgba(0,0,0,.05)}
-.row{display:flex;gap:8px;flex-wrap:wrap}
-input{padding:8px;border:1px solid #dce2f4;border-radius:8px}
-button{border:none;background:#2f67ff;color:#fff;padding:8px 10px;border-radius:8px}
+:root {
+  --bg: #f3f6fb;
+  --surface: #fff;
+  --text: #1e2a44;
+  --subtle: #61708f;
+  --primary: #2f67ff;
+  --primary-2: #5b8dff;
+  --border: #e3e9f7;
+  --shadow: 0 10px 24px rgba(31, 42, 68, 0.08);
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Segoe UI", sans-serif;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); }
+
+header {
+  padding: 18px 20px;
+  color: #fff;
+  background: linear-gradient(135deg, #1f56ea 0%, #3e75ff 100%);
+  box-shadow: 0 8px 26px rgba(25, 85, 239, .35);
+}
+header h1 { margin: 0; font-size: 22px; }
+header p { margin: 8px 0 0; font-size: 13px; opacity: .94; }
+
+main {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+section {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 14px;
+  box-shadow: var(--shadow);
+}
+section h2 { margin-top: 0; margin-bottom: 10px; }
+section p, li { color: var(--subtle); }
+
+.row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+input {
+  width: 100%;
+  padding: 9px 10px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #fff;
+}
+input:focus { outline: none; border-color: #9db7ff; box-shadow: 0 0 0 3px rgba(91,141,255,.15); }
+
+button {
+  border: none;
+  background: linear-gradient(135deg, var(--primary), var(--primary-2));
+  color: #fff;
+  padding: 9px 11px;
+  border-radius: 10px;
+  font-weight: 600;
+  box-shadow: 0 8px 18px rgba(47, 103, 255, .3);
+}
+ul { margin: 0; padding-left: 18px; }
+
+@media (max-width: 920px) {
+  main { grid-template-columns: 1fr; }
+  .row { grid-template-columns: 1fr 1fr; }
+}
