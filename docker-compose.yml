@@ -1,0 +1,7 @@
+services:
+  cake-ai-catalog:
+    build: .
+    container_name: cake-ai-catalog
+    ports:
+      - "8080:80"
+    restart: unless-stopped

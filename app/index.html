@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>蛋糕店 AI 电子图册</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>蛋糕店 AI 电子图册</h1>
+    <p>展示 + 选品 + 咨询 + AI 设计</p>
+  </header>
+
+  <nav class="tabs" id="tabs"></nav>
+
+  <main id="view"></main>
+
+  <template id="home-template">
+    <section class="card">
+      <h2>首页海报</h2>
+      <div class="banner-list" id="banner-list"></div>
+    </section>
+    <section class="card">
+      <h2>分类快捷入口</h2>
+      <div class="chips" id="quick-categories"></div>
+      <button class="primary" data-nav="ai">✨ AI 蛋糕设计</button>
+    </section>
+    <section class="card">
+      <h2>热门款式</h2>
+      <div class="grid" id="hot-products"></div>
+    </section>
+    <section class="card">
+      <h2>店铺信息</h2>
+      <p>甜里 Sweet Lab · 09:00-21:00</p>
+      <p>📞 400-888-6688</p>
+      <p>📍 深圳市南山区科技园 A 栋 1 楼（支持导航）</p>
+    </section>
+  </template>
+
+  <template id="catalog-template">
+    <section class="card">
+      <h2>蛋糕图册</h2>
+      <input id="search" placeholder="搜索名称、口味、风格" />
+      <div class="chips" id="filter-categories"></div>
+      <div class="grid" id="catalog-list"></div>
+    </section>
+  </template>
+
+  <template id="ai-template">
+    <section class="card">
+      <h2>AI 生成蛋糕图片</h2>
+      <div class="form">
+        <input id="ai-style" placeholder="风格（如奶油简约）" />
+        <input id="ai-color" placeholder="颜色（如粉白）" />
+        <input id="ai-theme" placeholder="主题（如生日）" />
+        <input id="ai-people" placeholder="人数（如8人）" />
+        <button class="primary" id="gen-image">生成图片</button>
+      </div>
+      <div class="grid" id="ai-images"></div>
+    </section>
+    <section class="card">
+      <h2>AI 图生视频</h2>
+      <button class="primary" id="gen-video">生成 10-15 秒展示视频</button>
+      <ul id="ai-videos"></ul>
+    </section>
+  </template>
+
+  <template id="cases-template">
+    <section class="card">
+      <h2>定制案例专区</h2>
+      <div class="chips" id="case-categories"></div>
+      <div class="grid" id="case-list"></div>
+    </section>
+  </template>
+
+  <template id="consult-template">
+    <section class="card">
+      <h2>在线咨询</h2>
+      <div id="chat-log" class="chat-log"></div>
+      <div class="inline">
+        <input id="chat-input" placeholder="输入文字咨询" />
+        <button class="primary" id="chat-send">发送</button>
+      </div>
+    </section>
+  </template>
+
+  <template id="favorites-template">
+    <section class="card">
+      <h2>我的收藏</h2>
+      <h3>收藏款式</h3>
+      <div class="grid" id="fav-products"></div>
+      <h3>收藏 AI 方案</h3>
+      <ul id="fav-ai"></ul>
+    </section>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>
