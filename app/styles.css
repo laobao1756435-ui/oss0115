@@ -1,0 +1,27 @@
+:root { font-family: -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif; }
+body { margin: 0; background:#f6f7fb; color:#202431; }
+.topbar { padding:16px; background:#ff6ea9; color:#fff; }
+.topbar h1 { margin:0; font-size:20px; }
+.topbar p { margin:6px 0 0; font-size:13px; opacity:.95; }
+.tabs { display:flex; overflow:auto; gap:8px; padding:10px; background:#fff; position:sticky; top:0; }
+.tabs button { border:none; padding:8px 12px; border-radius:999px; background:#eceef5; }
+.tabs button.active { background:#ff6ea9; color:#fff; }
+main { padding:12px; }
+.card { background:#fff; border-radius:12px; padding:12px; margin-bottom:12px; box-shadow:0 2px 10px rgba(0,0,0,.04); }
+.banner-list { display:grid; gap:8px; }
+.banner { height:100px; border-radius:10px; background:linear-gradient(120deg,#ffc2d9,#ffddeb); display:flex; align-items:flex-end; padding:10px; font-weight:600; }
+.chips { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:10px; }
+.chips button { border:1px solid #dfe3f0; background:#fff; border-radius:16px; padding:4px 10px; }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr)); gap:10px; }
+.item { background:#fff9fc; border:1px solid #ffe0ee; border-radius:10px; padding:8px; }
+.item h4 { margin:0 0 6px; font-size:14px; }
+.item p { margin:3px 0; font-size:12px; color:#5a6276; }
+.inline { display:flex; gap:8px; }
+input { width:100%; padding:8px; border:1px solid #d7dceb; border-radius:8px; margin-bottom:8px; }
+button.primary { border:none; border-radius:8px; background:#ff6ea9; color:#fff; padding:8px 12px; }
+.form { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+.form button { grid-column:span 2; }
+.chat-log { min-height:120px; background:#f9fbff; border:1px solid #e6ebfb; border-radius:8px; padding:8px; margin-bottom:8px; }
+.msg { margin:6px 0; font-size:13px; }
+.msg.me { text-align:right; }
+ul { padding-left:18px; }

@@ -1,0 +1,7 @@
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;background:#f7f8fc;margin:0;color:#1f2430}
+header{background:#2f67ff;color:#fff;padding:12px 16px}
+main{padding:12px;display:grid;gap:10px}
+section{background:#fff;border-radius:10px;padding:12px;box-shadow:0 2px 8px rgba(0,0,0,.05)}
+.row{display:flex;gap:8px;flex-wrap:wrap}
+input{padding:8px;border:1px solid #dce2f4;border-radius:8px}
+button{border:none;background:#2f67ff;color:#fff;padding:8px 10px;border-radius:8px}

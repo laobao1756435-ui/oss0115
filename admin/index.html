@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>蛋糕店商家后台</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header><h1>蛋糕店商家后台（Demo）</h1></header>
+  <main>
+    <section>
+      <h2>商品管理</h2>
+      <div class="row">
+        <input id="name" placeholder="名称" /><input id="flavor" placeholder="口味" /><input id="size" placeholder="尺寸" />
+        <button id="add">新增商品</button>
+      </div>
+      <ul id="products"></ul>
+    </section>
+    <section>
+      <h2>AI 素材生成</h2>
+      <button id="gen-mat">生成主图/场景图/短视频素材</button>
+      <ul id="materials"></ul>
+    </section>
+    <section>
+      <h2>咨询消息管理</h2>
+      <ul>
+        <li>用户A：想要粉白婚礼风（未读）</li>
+        <li>用户B：请问 8 寸几人份（已读）</li>
+      </ul>
+    </section>
+    <section>
+      <h2>店铺设置</h2>
+      <p>店名：甜里 Sweet Lab</p>
+      <p>电话：400-888-6688</p>
+      <p>营业：09:00-21:00</p>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
